@@ -18,7 +18,7 @@ public class Exemplo extends ResourceSupport{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long codigo;
+	private int codigo;
 	
 	@NotBlank
 	private String nome;
@@ -27,16 +27,16 @@ public class Exemplo extends ResourceSupport{
 	private String local;
 	
 	@NotBlank
-	private Date data;
+	private String data;
 	
 	@NotBlank
 	private String horario;
 	
-	public Long getCodigo() {
+	public int getCodigo() {
 		return codigo;
 	}
-	public void setCodigo(Long codigo) {
-		this.codigo = codigo;
+	public void setCodigo(int i) {
+		this.codigo = i;
 	}
 	public String getNome() {
 		return nome;
@@ -50,11 +50,11 @@ public class Exemplo extends ResourceSupport{
 	public void setLocal(String local) {
 		this.local = local;
 	}
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
-	public void setData(Date data) {
-		this.data = data;
+	public void setData(String string) {
+		this.data = string;
 	}
 	public String getHorario() {
 		return horario;
